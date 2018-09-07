@@ -19,7 +19,7 @@ Sub_Data_Set$Global_active_power<-as.numeric(Sub_Data_Set$Global_active_power)
 Sub_Data_Set<-mutate(Sub_Data_Set,date_time = strptime(paste(Sub_Data_Set$Date,Sub_Data_Set$Time),"%d/%m/%Y %H:%M:%S"))
 
 #Select PNG as the output device 
-png("plot1.png", width=480, height=480)
+png("plot2.png", width=480, height=480)
 
 #Plot a graph of of Global_active_power versus Week Days 
 plot(Sub_Data_Set$date_time,Sub_Data_Set$Global_active_power,type="l",xlab="",ylab = "Global Active Power (kilowatts)")
