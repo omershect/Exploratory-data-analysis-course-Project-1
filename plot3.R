@@ -1,5 +1,5 @@
 #This is an R script  for Project 1 of Exploratory Data Analysis Course 
-# This script is for Plot3  - Global Active Power Graph 
+# This script is for Plot3  -Energy Sub metering
 
 
 #Load Library plyr for use of mutate
