@@ -12,7 +12,7 @@ Data_Set<-read.table("./data/household_power_consumption.txt",header=TRUE, sep="
 #We will only be using data from the dates 2007-02-01 and 2007-02-02. 
 Sub_Data_Set<-Data_Set[Data_Set$Date %in% c("1/2/2007", "2/2/2007") ,]
 
-#Convert sub_meterin_1 and Sub_metering_2 to numeric values 
+#Convert sub_metering_1 and Sub_metering_2 to numeric values 
 Sub_Data_Set$Sub_metering_1<-as.numeric(Sub_Data_Set$Sub_metering_1)
 Sub_Data_Set$Sub_metering_2<-as.numeric(Sub_Data_Set$Sub_metering_2)
 
