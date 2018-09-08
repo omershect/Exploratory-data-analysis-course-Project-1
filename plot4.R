@@ -22,7 +22,7 @@ Sub_Data_Set$Voltage<-as.numeric(Sub_Data_Set$Voltage)
 #convert the Global_reactive_power to numeric
 Sub_Data_Set$Global_reactive_power<-as.numeric(Sub_Data_Set$Global_reactive_power)
 
-# Create a new columns of Date using the date and the time 
+# Create a new columns of date_time using the date and the time 
 Sub_Data_Set<-mutate(Sub_Data_Set,date_time = strptime(paste(Sub_Data_Set$Date,Sub_Data_Set$Time),"%d/%m/%Y %H:%M:%S"))
 
 #Select PNG as the output device 
