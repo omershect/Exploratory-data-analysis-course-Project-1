@@ -16,7 +16,7 @@ Sub_Data_Set<-Data_Set[Data_Set$Date %in% c("1/2/2007", "2/2/2007") ,]
 Sub_Data_Set$Sub_metering_1<-as.numeric(Sub_Data_Set$Sub_metering_1)
 Sub_Data_Set$Sub_metering_2<-as.numeric(Sub_Data_Set$Sub_metering_2)
 
-# Create a new columns of Date using the date and the time 
+# Create a new columns of date_time using the date and the time 
 Sub_Data_Set<-mutate(Sub_Data_Set,date_time = strptime(paste(Sub_Data_Set$Date,Sub_Data_Set$Time),"%d/%m/%Y %H:%M:%S"))
 
 #Select PNG as the output device 
